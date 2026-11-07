@@ -1,0 +1,13 @@
+# 1x RTX 3090 (24 GB): conservative batch, fp16, gradient accumulation.
+runtime:
+  num_processes: auto
+  mixed_precision: fp16
+  num_workers: 4
+  tf32: true
+
+train:
+  per_gpu_batch_size: 8
+
+sampler:
+  num_speakers: 3
+  per_cell: 2

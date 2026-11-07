@@ -1,0 +1,13 @@
+# 8x H200 (141 GB each): bf16, larger per-GPU batch and larger S x E x K cells.
+runtime:
+  num_processes: auto
+  mixed_precision: bf16
+  num_workers: 8
+  tf32: true
+
+train:
+  per_gpu_batch_size: 24
+
+sampler:
+  num_speakers: 8
+  per_cell: 2

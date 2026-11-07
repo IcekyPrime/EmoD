@@ -1,0 +1,14 @@
+# Core runtime (CUDA wheels are resolved by the installer; see README for pinned combos)
+torch>=2.1.0
+torchaudio>=2.1.0
+accelerate>=0.27.0
+transformers>=4.38.0
+safetensors>=0.4.0
+PyYAML>=6.0
+numpy>=1.24
+soundfile>=0.12
+tqdm>=4.66
+
+# Optional: experiment tracking / tests
+tensorboard>=2.15
+pytest>=7.4

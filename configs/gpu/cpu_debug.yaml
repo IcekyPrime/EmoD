@@ -1,0 +1,9 @@
+# CPU-only profile for smoke tests and CI. Not for real training.
+runtime:
+  num_processes: 1
+  mixed_precision: "no"
+  num_workers: 0
+  tf32: false
+
+train:
+  per_gpu_batch_size: 2

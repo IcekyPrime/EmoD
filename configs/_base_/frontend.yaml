@@ -1,0 +1,10 @@
+# Frozen SSL front-end. Stage 1/2/3 must keep this block identical so that
+# checkpoints stay compatible across stages.
+model:
+  frontend:
+    type: hf                 # hf | mock
+    name: microsoft/wavlm-base-plus
+    freeze: true
+    output_dim: 768
+    adapter_dim: 256
+    layer: -1
